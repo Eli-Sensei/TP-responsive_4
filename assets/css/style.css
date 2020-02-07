@@ -1,13 +1,88 @@
 *{box-sizing: border-box;}
+
 body{
     background-color: gray;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     margin: auto;
 }
+/* tOUTE LA BARRE NAV */
 nav{
-    height: 100px;
+    height: 70px;
     background-color: #fff;
 }
+
+/* LE TITRE WHITE */
+.navTitle{
+    padding-top: 15px;
+    text-align: center;
+    width: 40%;
+    float: left;
+}
+.navTitle span{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.navTitle span:nth-child(1){
+    font-weight: 700;
+}
+.navTitle span:nth-child(2){
+    font-weight: 600;
+}
+.navTitle span:nth-child(3){
+    font-weight: 400;
+}
+.navTitle span:nth-child(4){
+    font-weight: 300;
+}
+.navTitle span:nth-child(5){
+    font-weight: 100;
+}
+
+
+/* LA LISTE A DROITE */
+.listTitle{
+    width: 60%;
+    float: right;
+    padding-left: 70px;
+}
+.listTitle ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+.listTitle ul li a{
+    color: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+}
+.listTitle ul li{
+    float: left;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 20px;
+    height: 40px;
+    padding-top: 10px;
+    color: #545454;
+    transition: color 0.1s ease;
+}
+.listTitle ul li:nth-child(7){
+    border-right: #545454 1px solid;
+    padding-right: 20px;
+    font-weight: 900;
+    color: black;
+}
+.listTitle ul li:nth-child(8){
+
+}
+.listTitle ul li:hover{
+    color: black;
+}
+
+
+
+/* LE "THE BLOG". */
 header{
     background-image: url(../img/clean_code_bg.jpg);
     background-size: cover;
@@ -22,9 +97,144 @@ header{
 header h1{
     color: white;
     font-weight: normal;
+    font-size: 70px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 header p{
     color: #545454;
     margin: 0;
+}
+
+
+
+/* FAKE BOBY */
+.fakeBody{
+    width: 1200px;
+    border: 1px solid black;
+    height: 3000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+/* FAKE BOBY CONTENT LEFT */
+.fakeBody > div:first-child{
+    width: 70%;
+    height: 100%;
+    border: blue solid 2px;
+    float: left;
+}
+
+.fakeBody > div:first-child > div{
+    height: 390px;
+    margin-bottom: 50px;
+}
+
+.littleChildLeftContent{
+    height: 100%;
+    width: 55%;
+    padding-right: 20px;
+    float: left;
+}
+.littleChildLeftContent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.littleChildRightContent{
+    height: 100%;
+    width: 45%;
+    float: left;
+}
+.littleChildRightContent p{
+    color: #545454;
+    margin-top: auto;
+}
+.littleChildRightContent h1{
+    font-weight: 100;
+}
+.littleChildRightContent ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 0;
+    float: left;
+    width: 100%;
+}
+.littleChildRightContent ul li{
+    float: left;
+    color: #545454;
+}
+.littleChildRightContent ul li:nth-of-type(1){
+    padding-right: 10px;
+}
+.littleChildRightContent ul li:nth-of-type(2){
+    border-right: 1px solid #545454;
+    border-left: 1px solid #545454;
+    padding: 0 10px;
+}
+.littleChildRightContent ul li:nth-of-type(3){
+    padding-left: 10px;
+}
+.littleChildRightContent p:nth-of-type(2){
+    float: left;
+    padding-top: 30px;
+    border-top: #545454 2px solid;
+}
+.littleChildRightContent p:nth-of-type(3){
+    font-weight: 600;
+    color: black;
+    float: left;
+}
+
+#pageNumber{
+    width: 55%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#pageNumber span{
+    width: 50px;
+    height: 100%;
+    color: #545454;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pageNumber span:nth-of-type(3){
+    color: black;
+    border: black 1px solid;
+
+}
+
+
+
+/* FAKE BOBY CONTENT RIGHT */
+.fakeBody > div:last-child{
+    width: 30%;
+    height: 100%;
+    border: red solid 2px;
+    float: left;
+}
+.fakeBody > div:last-child > div{
+    height: 400px;
+}
+.listContent{
+    list-style: circle;
+    list-style-position: inside;
+    margin-top: 0;
+}
+.listContent li{
+    color: #545454;
+    border-top: #545454 1px solid;
+    border-right: none;
+    border-left: none;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+.listContent li:last-child{
+    border-bottom: #545454 1px solid;
 }
