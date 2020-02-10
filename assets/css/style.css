@@ -1,7 +1,6 @@
 *{box-sizing: border-box;}
 
 body{
-    background-color: gray;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     margin: auto;
@@ -106,13 +105,15 @@ header p{
     margin: 0;
 }
 
+.h2Bold{
+    font-weight: normal;
+}
 
 
 /* FAKE BOBY */
 .fakeBody{
-    width: 1200px;
-    border: 1px solid black;
-    height: 3000px;
+    width: 1100px;
+    height: 2280px;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -120,9 +121,8 @@ header p{
 
 /* FAKE BOBY CONTENT LEFT */
 .fakeBody > div:first-child{
-    width: 70%;
+    width: 75%;
     height: 100%;
-    border: blue solid 2px;
     float: left;
 }
 
@@ -214,18 +214,22 @@ header p{
 
 /* FAKE BOBY CONTENT RIGHT */
 .fakeBody > div:last-child{
-    width: 30%;
+    width: 25%;
     height: 100%;
-    border: red solid 2px;
     float: left;
+    padding-left: 10px;
 }
-.fakeBody > div:last-child > div{
-    height: 400px;
+
+/* Div de la list */
+.fakeBody > div:last-child > div:first-child{
+    height: 250px;
+    border: none;
 }
 .listContent{
     list-style: circle;
     list-style-position: inside;
     margin-top: 0;
+    padding-left: 0;
 }
 .listContent li{
     color: #545454;
@@ -237,4 +241,162 @@ header p{
 }
 .listContent li:last-child{
     border-bottom: #545454 1px solid;
+}
+
+
+/* Div de popular posts */
+.fakeBody > div:last-child > div:nth-of-type(2){
+    height: 900px;
+    border-bottom: 1px #545454 solid;
+}
+.rightContent > div:nth-of-type(2) h2{
+    font-weight: normal;
+}
+.rightContent > div:nth-of-type(2) img{
+    width: 100%;
+}
+.rightContent > div:nth-of-type(2) p:nth-of-type(2n + 1){
+    margin-bottom: 10px;
+}
+.rightContent > div:nth-of-type(2) p:nth-of-type(2n + 2){
+    font-size: 11px;
+    color: #545454;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+
+/* Div Popular Tags */
+.rightContentTags{
+    height: 250px;
+}
+.rightContentTags h2{
+    font-weight: normal;
+}
+.flexTags{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexTags div{
+    border: #545454 1px solid;
+    padding: 10px;
+    margin: 0 5px 5px 0;
+    min-width: 75px;
+}
+.flexTags div p{
+    text-align: center;
+    margin: auto;
+    color: #545454;
+}
+
+/* Div About Blog */
+.rightContent > div:nth-of-type(4) h2{
+    font-weight: normal;
+}
+.rightContent > div:nth-of-type(4) p{
+    color: #545454;
+}
+
+
+
+/* footer */
+footer{
+    height: 500px;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > div{
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    
+}
+footer div h2{
+    color: white;
+    margin-top: 0;
+}
+.IMGfooterLeft{
+    width: 100%;
+    margin-top: 30px;
+    float: left;
+}
+.IMGfooterLeft div{
+    float: left;
+}
+.IMGfooterLeft div:first-child{
+    width: 20%;
+    height: 55px;
+}
+.IMGfooterLeft div:first-child img{
+    width: 100%;
+    height: 100%;
+}
+.IMGfooterLeft div:last-child{
+    width: 75%;
+    height: 55px;
+    float: right;
+}
+.IMGfooterLeft div:last-child p{
+    color: white;
+    margin: 0;
+}
+.IMGfooterLeft div:last-child p:first-child{
+    color: #777777;
+}
+.IMGfooterLeft div:last-child p:last-child{
+    font-size: 12px;
+    color: #545454;
+    margin-top: 5px;
+}
+
+
+
+footer > div:nth-of-type(2) p{
+    color: #777777;
+    line-height: 30px;
+}
+footer > div:nth-of-type(2) ul{
+    padding: 0;
+    list-style: none;
+}
+footer > div:nth-of-type(2) li{
+    float: left;
+    margin-right: 10px;
+    border: #3a3a3a 1px solid;
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+}
+footer > div:nth-of-type(2) li i{
+    color: #3a3a3a;
+    font-size: 30px;
+}
+footer > div:last-child input{
+    background-color: transparent;
+    border: #3a3a3a 2px solid;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+footer > div:last-child textarea{
+    height: 100px;
+    background-color: transparent;
+    border: #3a3a3a 2px solid;
+    width: 100%;
+    margin-top: 10px;
+    color: #777777;
+    padding-top: 10px;
+    resize: none;
+    font-weight: bold;
+}
+footer > div:last-child button{
+    background-color: transparent;
+    border: #3a3a3a 2px solid;
+    margin-top: 10px;
+    color: #777777;
+    font-weight: 900;
+    padding: 15px 15px;
 }
